@@ -57,7 +57,7 @@ export function HomeScreen() {
   )
 }
 
-const LinkListItem = ({
+export const LinkListItem = ({
   children,
   href,
   as,

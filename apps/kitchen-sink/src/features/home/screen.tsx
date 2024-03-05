@@ -114,6 +114,9 @@ const ColorSchemeListItem = (props: ListItemProps) => {
 
 const demos = [
   {
+    pages: [{ title: 'Bento', route: '/bento' }],
+  },
+  {
     pages: [
       { title: 'Sandbox', route: '/sandbox' },
       {

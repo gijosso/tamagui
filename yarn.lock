@@ -6781,6 +6781,7 @@ __metadata:
     "@welldone-software/why-did-you-render": "npm:^7.0.1"
     burnt: "npm:^0.12.2"
     expo: "npm:~50.0.6"
+    expo-document-picker: "npm:~11.10.1"
     expo-font: "npm:~11.10.2"
     expo-linear-gradient: "npm:^12.7.1"
     expo-linking: "npm:~6.2.2"
@@ -14972,6 +14973,15 @@ __metadata:
   peerDependencies:
     expo: "*"
   checksum: 10/9eb256895aa24efd41ca8c48b7dd76c03ecad4662e86c32440ea7d4162397014c80775b73db499add5e9452721f236c6ba333af93d8a277ad964f1fd938305f1
+  languageName: node
+  linkType: hard
+
+"expo-document-picker@npm:~11.10.1":
+  version: 11.10.1
+  resolution: "expo-document-picker@npm:11.10.1"
+  peerDependencies:
+    expo: "*"
+  checksum: 10/0ecb48424df27838ecdb42e9ffea5ded8c65983ff6ff7a4b6d4a962278bffc8ea617f0257be0e5041a597242d14c00ef38557997d83adada4c55b5dc03362c69
   languageName: node
   linkType: hard
 

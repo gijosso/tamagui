@@ -8,12 +8,25 @@ import {
   YGroup,
   YStack,
 } from 'tamagui'
+import * as sections from '@tamagui/bento'
 import { LinkListItem } from '../home/screen'
 
 export function BentoScreen() {
   return (
     <ScrollView>
       <YStack bg="$color2" p="$3" pt="$6" pb="$8" f={1} space>
+        <YGroup size="$4" key={i} separator={<Separator />}>
+          {sections.listingData.sections.map(({ sectionName, parts }) => {
+            return (
+              <YGroup.Item key={'test'}>
+                <LinkListItem bg="$color1" href={'test'} pressTheme size="$4">
+                  {'test'}
+                </LinkListItem>
+              </YGroup.Item>
+            )
+          })}
+        </YGroup>
+
         {demos.map((group, i) => {
           return (
             <YGroup size="$4" key={i} separator={<Separator />}>

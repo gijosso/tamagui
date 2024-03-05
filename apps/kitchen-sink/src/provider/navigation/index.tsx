@@ -51,6 +51,7 @@ export function NavigationProvider({ children }: { children: React.ReactNode }) 
           tests: 'tests',
           test: 'test/:id',
           sandbox: 'sandbox',
+          bento: 'bento',
         },
       } as const,
     }),

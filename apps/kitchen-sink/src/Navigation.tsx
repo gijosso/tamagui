@@ -4,9 +4,11 @@ import { DemoScreen } from './features/demos/demo-screen'
 import { HomeScreen } from './features/home/screen'
 import { TestCasesScreen } from './features/testcases/screen'
 import { TestScreen } from './features/testcases/test-screen'
+import { BentoScreen } from './features/bento/screen'
 import { Sandbox } from './Sandbox'
 
 const Stack = createNativeStackNavigator<{
+  bento: undefined
   home: undefined
   demo: {
     id: string
@@ -21,13 +23,13 @@ const Stack = createNativeStackNavigator<{
 export function Navigation() {
   return (
     <Stack.Navigator initialRouteName="home">
-      <Stack.Screen
+      {/* <Stack.Screen
         name="home"
         component={HomeScreen}
         options={{
           title: 'Home',
         }}
-      />
+      /> */}
       <Stack.Screen
         name="sandbox"
         component={Sandbox}
@@ -54,6 +56,13 @@ export function Navigation() {
         component={TestScreen}
         options={{
           title: 'Test Case',
+        }}
+      />
+      <Stack.Screen
+        name="bento"
+        component={BentoScreen}
+        options={{
+          title: 'Bento',
         }}
       />
     </Stack.Navigator>
